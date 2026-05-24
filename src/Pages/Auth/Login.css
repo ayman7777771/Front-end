@@ -4,7 +4,10 @@
 }
 
 .login-container {
-    background: linear-gradient(135deg, #e6f9f8 0%, #cfeefc 50%, #b3e5fc 100%);
+    /* background: linear-gradient(135deg, #e6f9f8 0%, #cfeefc 50%, #25b1f1 100%); */
+    background-image: url("../../assets/images/con_background.jpeg");
+    background-size: cover;
+    background-position: center;
     min-height:100vh;
     display: flex;
     align-items: center;
@@ -14,8 +17,8 @@
     flex-direction: column;
 }
 .login-card {
-  background: rgba(255, 255, 255, 0.329);
-  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.281);
+  backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(15px);
   height:73vh;
   margin: 0;
@@ -146,17 +149,4 @@
 @keyframes spin {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
-}
-
-.custom-error-toast {
-    background: rgba(193, 49, 63, 0.176) !important;
-    backdrop-filter: blur(28px);
-    color: #f32222ec !important;
-    padding: 8px 8px !important;
-    border-radius: 8px !important;
-    border: 1px solid rgba(252, 217, 217, 0.2) !important;
-    font-size: 14px;
-    font-weight: 400;
-    max-width: 400px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }

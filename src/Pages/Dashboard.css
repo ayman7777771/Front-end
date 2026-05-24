@@ -1,0 +1,18 @@
+.dashboard-page-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  padding: 1rem;
+}
+
+.fade-in { animation: dashboardFade 0.35s ease-out; }
+
+@keyframes dashboardFade {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .dashboard-page-wrapper { gap: 1.25rem; padding: .5rem; }
+}
